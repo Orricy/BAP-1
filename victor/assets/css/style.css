@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "cheddar";
+  src: url("assets/font/cheddar_jack.ttf");
+}
+.screen {
+  width: 375px;
+  height: 627px;
+  border: 1px solid black ;
+}
+.screen p {
+  font-family: 'Raleway', sans-serif;
+}
+.screen a {
+  color: white;
+}
+.row {
+  height: 33%;
+  margin-left: 0px;
+  color: white;
+  width: 100%;
+}
+.row .photos .carrephoto1 {
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  margin-top: 8px;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.row .photos .carrephoto2 {
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  margin-top: 8px;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.what {
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+.who {
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 35px;
+}
+.when {
+  font-weight: 200;
+  font-size: 0.8em;
+  bottom: 10px;
+}
+.fa-pencil {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.fa-bell-o {
+  position: absolute;
+  top: 165px;
+  right: 10px;
+}
+.row1 {
+  background-color: #4CABF2;
+}
+.row2 {
+  background-color: #E7D200;
+}
+.row3 {
+  background-color: #37BA42;
+  position: relative;
+}
+.anim:hover .row3 {
+  padding-right: -30px;
+}
+.anim:hover .row3 {
+  right: -30px;
+}
