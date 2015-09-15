@@ -26,10 +26,14 @@ require 'template/_header.php';
 <!-- Before login --> 
 
 <div class="container">
-	<div class="col-md-4 col-md-offset-4">
-		<a href="facebookconnect/fbconfig.php">Connectez vous avec Facebook</a>
+	<div class="main-buttons">
+		<div class="col-xs-8 col-xs-offset-2 text-center">
+			<a href="facebookconnect/fbconfig.php">Connectez vous avec Facebook</a>
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 text-center">
+			<a href="dashboard.php">Passer cette étape</a>
+		</div>
 	</div>
-	<a href="dashboard.php">Passer cette étape</a>
 </div>
 
     <?php endif ?>
