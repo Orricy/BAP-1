@@ -31,7 +31,7 @@ session_start();
     <?php else: ?>     <!-- Before login --> 
 <div class="container">
 <h1>Connectez vous avec Facebook</h1>
-           Non Connecté
+           <a href="dashboard.php">Non Connecté</a>
 <div>
       <a href="facebookconnect/fbconfig.php">Connectez vous avec Facebook</a></div>
 	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>

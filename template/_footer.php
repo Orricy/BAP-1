@@ -1,21 +1,17 @@
 <script type="text/javascript">
 // Converts canvas to an image
 function convertCanvasToImageWhat(canvas) {
-	/*var image = new Image();
-	image.src = canvas.toDataURL("image/png");
-	console.log(image);*/
 	document.getElementById('what-form').value = canvas.toDataURL('image/png');
 	//return image;
 }
 function convertCanvasToImageWho(canvas) {
-	/*var image = new Image();
-	image.src = canvas.toDataURL("image/png");*/
-	console.log('image');
 	document.getElementById('who-form').value = canvas.toDataURL('image/png');
 	//return image;
 }
 // Put event listeners into place
 window.addEventListener("DOMContentLoaded", function() {
+	var width = 320;
+	var heigth = 240;
 	// Grab elements, create settings, etc.
 	var canvas = document.getElementById("canvas"),
 		context = canvas.getContext("2d"),
@@ -56,12 +52,12 @@ window.addEventListener("DOMContentLoaded", function() {
 	// Trigger photo take
 	document.getElementById("what").addEventListener("click", function() {
 		console.log('what');
-		context.drawImage(video, 0, 0, 640, 480);
+		context.drawImage(video, 0, 0, width, heigth);
 		convertCanvasToImageWhat(canvas);
 	});
 	document.getElementById("who").addEventListener("click", function() {
 		console.log('who');
-		context2.drawImage(video2, 0, 0, 640, 480);
+		context2.drawImage(video2, 0, 0, width, heigth);
 		convertCanvasToImageWho(canvas2);
 	});
 }, false);
