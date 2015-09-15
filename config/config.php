@@ -5,7 +5,7 @@
 // Paramétrage des différentes valeurs de connexion à la base de donénes
 define('SQL_HOST',       'localhost');
 define('SQL_USERNAME',   'root');
-define('SQL_PASSWORD',   'root');
+define('SQL_PASSWORD',   '');
 define('SQL_DBNAME',	 'mineproject'); 
 
 
