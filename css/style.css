@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #canvas{
 	display: none;
 }
@@ -9,4 +10,11 @@
 }
 #who{
 	margin-top: -40px;
+}
+.container {
+	height: 100%;
+}
+
+.main-buttons {
+	margin-top: 75%; 
 }
