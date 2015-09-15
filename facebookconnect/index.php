@@ -6,7 +6,8 @@ session_start();
   <head>
   <meta charset="utf-8" />
     <title>Connecté avec Facebook</title>
-<link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"> 
+<link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet"> 
  </head>
   <body>
   <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
