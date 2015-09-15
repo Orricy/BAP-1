@@ -2,13 +2,9 @@
 session_start(); 
 ?>
 <!doctype html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml">
-  <head>
-  <meta charset="utf-8" />
-    <title>Connecté avec Facebook</title>
-<link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet"> 
- </head>
+<?php
+require 'template/_header.php';
+?>
   <body>
   <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
 <div class="container">
@@ -28,15 +24,16 @@ session_start();
 <li><?php echo $_SESSION['EMAIL']; ?></li>
 <div><a href="facebookconnect/logout.php">Deconnexion</a></div>
 </ul></div></div>
-    <?php else: ?>     <!-- Before login --> 
+    <?php else: ?>  
+<!-- Before login --> 
+
 <div class="container">
-<h1>Connectez vous avec Facebook</h1>
-           <a href="dashboard.php">Non Connecté</a>
-<div>
-      <a href="facebookconnect/fbconfig.php">Connectez vous avec Facebook</a></div>
-	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>
-	  </div>
-      </div>
+	<div class="col-md-4 col-md-offset-4">
+		<a href="facebookconnect/fbconfig.php">Connectez vous avec Facebook</a>
+	</div>
+	<a href="dashboard.php">Passer cette étape</a>
+</div>
+
     <?php endif ?>
   </body>
 </html>
