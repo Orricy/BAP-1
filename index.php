@@ -26,14 +26,14 @@ session_start();
 <li><?php echo $_SESSION['FULLNAME']; ?></li>
 <li class="nav-header">Facebook Email</li>
 <li><?php echo $_SESSION['EMAIL']; ?></li>
-<div><a href="logout.php">Deconnexion</a></div>
+<div><a href="facebookconnect/logout.php">Deconnexion</a></div>
 </ul></div></div>
     <?php else: ?>     <!-- Before login --> 
 <div class="container">
 <h1>Connectez vous avec Facebook</h1>
            Non Connecté
 <div>
-      <a href="fbconfig.php">Connectez vous avec Facebook</a></div>
+      <a href="facebookconnect/fbconfig.php">Connectez vous avec Facebook</a></div>
 	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>
 	  </div>
       </div>

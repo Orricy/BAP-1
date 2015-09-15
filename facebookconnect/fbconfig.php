@@ -18,7 +18,7 @@ require 'functions.php';
 // init app with app id and secret
 FacebookSession::setDefaultApplication( '1125490214146101','420bc14c2388e1d358499bac911e089a' );
 // login helper with redirect_uri
-    $helper = new FacebookRedirectLoginHelper('http://localhost:8888/facebookconnect/fbconfig.php' );
+    $helper = new FacebookRedirectLoginHelper('http://localhost/BAP-1/facebookconnect/fbconfig.php' );
 try {
   $session = $helper->getSessionFromRedirect();
 } catch( FacebookRequestException $ex ) {
@@ -43,7 +43,7 @@ if ( isset( $session ) ) {
 	    $_SESSION['EMAIL'] =  $femail;
       checkuser($fbid,$fbfullname,$femail);
     /* ---- header location after session ----*/
-  header("Location: index.php");
+  header("Location: ../index.php");
 } else {
   $loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
