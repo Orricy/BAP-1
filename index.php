@@ -16,8 +16,6 @@ require 'template/_header.php';
  <ul class="nav nav-list">
 <li class="nav-header">Image</li>
 	<li><img src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"></li>
-<li class="nav-header">Facebook ID</li>
-<li><?php echo  $_SESSION['FBID']; ?></li>
 <li class="nav-header">Facebook Nom</li>
 <li><?php echo $_SESSION['FULLNAME']; ?></li>
 <li class="nav-header">Facebook Email</li>
