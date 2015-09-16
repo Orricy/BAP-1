@@ -24,14 +24,14 @@ require 'template/_header.php';
 		</ul></div></div>
     <?php }else{ ?>  
 		<!-- Before login --> 
-
+		<img class="img-login" src="css/img/login.png">
 		<div class="container">
 			<div class="main-buttons">
-				<div class="col-xs-8 col-xs-offset-2 text-center">
-					<a href="facebookconnect/fbconfig.php">Connectez vous avec Facebook</a>
+				<div class="col-xs-12  text-center">
+					<a href="facebookconnect/fbconfig.php" class="btn-fb">Connectez-vous avec Facebook</a>
 				</div>
 				<div class="col-xs-8 col-xs-offset-2 text-center">
-					<a href="dashboard.php">Passer cette étape</a>
+					<a href="dashboard.php" class="pass">Passer cette étape</a>
 				</div>
 			</div>
 		</div>
