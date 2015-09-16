@@ -10,8 +10,8 @@ function convertCanvasToImageWho(canvas) {
 }
 // Put event listeners into place
 window.addEventListener("DOMContentLoaded", function() {
-	var width = 320;
-	var heigth = 240;
+	var width = window.innerWidth - (window.innerWidth/20);
+	var height = (width / 2) + 5;
 	// Grab elements, create settings, etc.
 	var canvas = document.getElementById("canvas"),
 		context = canvas.getContext("2d"),
@@ -24,6 +24,8 @@ window.addEventListener("DOMContentLoaded", function() {
 		errBack = function(error) {
 			console.log("Video capture error: ", error.code); 
 		};
+	console.log(height);
+	console.log(width);
 
 	// Put video listeners into place
 	if(navigator.getUserMedia) { // Standard
@@ -52,12 +54,12 @@ window.addEventListener("DOMContentLoaded", function() {
 	// Trigger photo take
 	document.getElementById("what").addEventListener("click", function() {
 		console.log('what');
-		context.drawImage(video, 0, 0, width, heigth);
+		context.drawImage(video, 0, 0, width, height);
 		convertCanvasToImageWhat(canvas);
 	});
 	document.getElementById("who").addEventListener("click", function() {
 		console.log('who');
-		context2.drawImage(video2, 0, 0, width, heigth);
+		context2.drawImage(video2, 0, 0, width, height);
 		convertCanvasToImageWho(canvas2);
 	});
 }, false);
