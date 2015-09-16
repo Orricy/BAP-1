@@ -4,17 +4,21 @@
   		<h2 class="text-center">Mine</h2>
   	</div>
   	<div class="col-xs-12">
-	  	<button type="button" class="btn btn-lg btn-block">What?<br><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></button>
+	  	<button type="button" class="btn btn-lg btn-block">What?</button>
 	  	<video id="video" width="100%" autoplay></video>
 	  	<br>
-		<button id="what" class="col-xs-offset-5 col-xs-2">Shoot</button>
+	  	<div class="text-center">
+	  		<button type="button" id="what" class="btn btn-xl"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></button>
+	  	</div>
 		<canvas id="canvas" style="border: 5px solid black;"></canvas>
   	</div>
   	<div class="col-xs-12">
-	  	<button type="button" class="btn btn-lg btn-block">Who?<br><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></button>
+	  	<button type="button" class="btn btn-lg btn-block">Who?<br></button>
 	  	<video id="video2" width="100%" autoplay></video>
 	  	<br>
-		<button id="who" class="col-xs-offset-5 col-xs-2">Shoot</button>
+	  	<div class="text-center">
+	  		<button type="button" id="who" class="btn btn-xl"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></button>
+	  	</div>
 		<canvas id="canvas2" style="border: 5px solid black;"></canvas>
   	</div>
 </div>
