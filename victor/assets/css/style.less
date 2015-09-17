@@ -2,6 +2,8 @@
   font-family: "cheddar";
   src: url("assets/font/cheddar_jack.ttf");
 }
+@gris : #333333;
+@jaune : #ffb600;
 
 .materialShadow(@level: 1){
   & when (@level = 1) {
@@ -20,77 +22,94 @@
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
 }
-
+.row{
+  margin-left: 0px;
+}
 .screen{
   width: 375px;
   height: 627px;
   border: 1px solid black ;
   p{
     font-family: 'Raleway', sans-serif;
+    color: #C69957 ;
   }
   a{
     color: white;
   }
 }
-  .row {
-    height: 33%;
-    width: 100%;
-    margin-left: 0px;
-    color: white;
-    width: 100%;
-    .photos {
-      .carrephoto1 {
-        width: 90px;
-        height: 90px;
-        border: 1px solid white;
-        margin-top: 8px;
-        border-radius: 50px;
-        .materialShadow(@level: 2);
-      }
-      .carrephoto2 {
-        width: 90px;
-        height: 90px;
-        border: 1px solid white;
-        margin-top: 8px;
-        border-radius: 50px;
-        .materialShadow(@level: 2);
-      }
+.row {
+  height: 33%;
+  width: 100%;
+  margin-left: 0px;
+  color: white;
+  width: 100%;
+  .photos {
+    .carrephoto1 {
+      width: 90px;
+      height: 90px;
+      border: 1px solid white;
+      margin-top: 8px;
+      border-radius: 50px;
+      .materialShadow(@level: 2);
+    }
+    .carrephoto2 {
+      width: 90px;
+      height: 90px;
+      border: 1px solid white;
+      margin-top: 8px;
+      border-radius: 50px;
+      .materialShadow(@level: 2);
     }
   }
-  .what{
-    font-weight: 200;
-    font-size: 1.5em;
-    margin-top: 15px;
-  }
-  .who{
-    font-weight: 200;
-    font-size: 1.5em;
-    margin-top: 35px;
+}
+.what{
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #DA214A;
+}
+.who{
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 35px;
+  color: #DA214A;
 
-  }
-  .when{
-    font-weight: 200;
-    font-size: 0.8em;
-    bottom: 10px;
-  }
+}
+.when{
+  font-weight: 200;
+  font-size: 0.8em;
+  bottom: 10px;
+}
 .fa-pencil{
   top: 10px;
-  right: 10px;
+  right: 60px;
   position: absolute;
 }
+
 .fa-bell-o{
   position: absolute;
   top: 165px;
-  right: 10px;
+  right: 60px;
 }
+
+
 .row1{
-  background-color: #4CABF2;
+  background-color: @jaune;
+  p{
+    color: @gris ;
+  }
 }
 .row2{
-  background-color: #E7D200;
+  background-color: @gris;
+  p{
+    color:@jaune ;
+  }
 }
 .row3{
-  background-color: #37BA42;
+  background-color: @jaune;
+  p{
+    color : @gris;
+  }
   position: relative;
 
 }
@@ -104,4 +123,39 @@
 }
 .anim:hover .row3 {
   right: -30px;
+}
+
+
+#testanim{
+  &:hover{
+    .icones{
+      opacity: 1;
+    }
+  }
+}
+
+.icones{
+  position: absolute;
+  opacity: 0;
+  transition : 200ms;
+  .un{
+    top: 3px;
+    left: 320px;
+    position: absolute;
+  }
+  .deux{
+    top: 105px;
+    left: 320px;
+    position: absolute;
+  }
+  .trois{
+    top: 156px;
+    left: 320px;
+    position: absolute;
+  }
+  .quatre{
+    top: 54px;
+    left: 320px;
+    position: absolute;
+  }
 }
