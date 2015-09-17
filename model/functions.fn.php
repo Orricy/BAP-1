@@ -1,11 +1,11 @@
 <?php
 //Il est possible d'ajouter des paramètres selon le besoin.
 //Faire attention à la nomenclature de la base, ses tables et colonnes.
-function insertSharedObject($db, $object, $person){
+function insertSharedObject($db, $NameObject, $NamePerson, $photoObject, $photoPerson){
 	try{
-		$sql = "INSERT INTO shared SET object = :object, person = :person";
+		$sql = "INSERT INTO minetable SET NameObject = :NameObject, NamePerson = :NamePerson, photoObject = :photoObject, photoPerson = :photoPerson";
 		$req = $db->prepare($sql);
-		$req->execute(array(':object' => $object, ':person' => $person));
+		$req->execute(array(':NameObject' => $NameObject, ':NamePerson' => $NamePerson,':photoObject' => $photoObject, ':photoPerson' => $photoPerson));
 		$result = $req->fetchAll(PDO::FETCH_ASSOC);
 		return true;
 	}
@@ -16,7 +16,7 @@ function insertSharedObject($db, $object, $person){
 }
 function deleteElement($db, $element_id){
 	try{
-		$sql = "DELETE FROM shared WHERE id = :id";
+		$sql = "DELETE FROM minetable WHERE id = :id";
 		$req = $db->prepare($sql);
 		$req->execute(array(':id' => $element_id));
 		$result = $req->fetchAll(PDO::FETCH_ASSOC);
