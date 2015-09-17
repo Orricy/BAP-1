@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 <?php
 session_start(); 
 ?>
@@ -40,7 +40,6 @@ require 'template/_header.php';
     <?php }; ?>
   </body>
 </html>
-=======
 <?php 
 session_start();
 //Main content and login
@@ -52,5 +51,3 @@ require 'template/main.php';
 require 'template/_footer.php';
 
 ?>
-
->>>>>>> Stashed changes
