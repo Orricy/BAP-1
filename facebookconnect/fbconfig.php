@@ -43,7 +43,7 @@ if ( isset( $session ) ) {
 	    $_SESSION['EMAIL'] =  $femail;
       checkuser($fbid,$fbfullname,$femail);
     /* ---- header location after session ----*/
-  header("Location: ../index.php");
+  header("Location: ../dashboard.php");
 } else {
   $loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
